@@ -1,0 +1,39 @@
+<!DOCTYPE html5>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="./styles/main.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
+        <script src="./scripts/memo.js"></script>
+        <title>MEMO</title>
+    </head>
+    <body>
+        <header>
+            <p>MEMORY v1.2</p>
+        </header>
+        <nav id="my_nav">
+                <div class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            <ul id="hide" class="hide">
+                <li><a href="index.html">HOME</a></li>
+                <li onclick='init_table()' id="start"><a href="#">START</a></li>
+                <li onclick='restart()'class="restart" id="restart"><a href ="#">RESTART</a></li>
+                <li><a href="how_to.html">HOW TO PLAY</a></li>
+                <li><a href="http://www.ismyinternetworking.com">EXIT</a></li>
+            </ul>
+        </nav>
+
+        <div class="board_background"><span class="bar"></span>
+            <div class="board" id="board">
+                <div id="matchpop" class="popup"><span>It's a match!</span></div>
+                <div id="winpop" class="popup"><span>You have won! Laura is dead.</span></div>
+            </div>
+        </div>
+    </body>
+</html>
